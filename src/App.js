@@ -40,12 +40,14 @@ function App() {
           <input
            type="text"
            className='search-bar'
-           placeholder='Search...'
+           placeholder='Enter Location...'
            onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
            />
         </div>
+<div className='quote'>Wherever you go, no matter what the weather, always bring your own sunshine. </div>
+       
        
         {(typeof weather.main != "undefined") ? (
         <div>
